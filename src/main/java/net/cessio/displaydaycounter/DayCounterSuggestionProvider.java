@@ -9,12 +9,12 @@ import net.minecraft.server.command.ServerCommandSource;
 
 import java.util.concurrent.CompletableFuture;
 
-public class DevCleanSuggestionProvider implements SuggestionProvider<ServerCommandSource> {
+public class DayCounterSuggestionProvider implements SuggestionProvider<ServerCommandSource> {
     @Override
     public CompletableFuture<Suggestions> getSuggestions(CommandContext<ServerCommandSource> commandContext, SuggestionsBuilder suggestionsBuilder) throws CommandSyntaxException {
-        suggestionsBuilder.suggest("1")
-        .suggest("7")
-        .suggest("31");
+        suggestionsBuilder.suggest("<Day Number>");
+        suggestionsBuilder.suggest("on");
+        suggestionsBuilder.suggest("off");
         return suggestionsBuilder.buildFuture();
     }
 }
