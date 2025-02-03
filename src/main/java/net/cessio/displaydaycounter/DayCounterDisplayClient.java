@@ -590,6 +590,7 @@ public class DayCounterDisplayClient implements ClientModInitializer {
             public CompletableFuture<Suggestions> getSuggestions(CommandContext<FabricClientCommandSource> context, SuggestionsBuilder suggestionsBuilder) throws CommandSyntaxException {
                 switch (commandContext) {
                     case "day" -> suggestionsBuilder.suggest("<day>");
+                    case "hour" -> suggestionsBuilder.suggest("<hour>");
                     case "sync" -> {
                         suggestionsBuilder.suggest("sync-server");
                         suggestionsBuilder.suggest("sync-real");
