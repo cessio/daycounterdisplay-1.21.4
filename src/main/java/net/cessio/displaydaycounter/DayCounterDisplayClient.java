@@ -593,7 +593,6 @@ public class DayCounterDisplayClient implements ClientModInitializer {
                     case "sync" -> {
                         suggestionsBuilder.suggest("sync-server");
                         suggestionsBuilder.suggest("sync-real");
-                        suggestionsBuilder.suggest("sync-irl");
                     }
                     case "color" -> {
                         suggestionsBuilder.suggest("red");
