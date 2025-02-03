@@ -742,11 +742,11 @@ public class DayCounterDisplayClient implements ClientModInitializer {
             }
             case "dayCounterDisplayText" -> {
                 counterDisplayText = value; // Assuming counterDisplayText is a String
-                System.out.println(str + " initialized");
+                System.out.println(str + " initialized with value "+value);
             }
             case "hourCounterDisplayText" -> {
                 hourDisplayText = value; // Assuming hourDisplayText is a String
-                System.out.println(str + " initialized");
+                System.out.println(str + " initialized with value "+value);
             }
             case "dayX" -> {
                 dayX = Integer.valueOf(value); // Assuming dayX is a float
@@ -833,6 +833,7 @@ public class DayCounterDisplayClient implements ClientModInitializer {
                     {
                         str = line.substring(0, i);
                         value = line.substring(i+1);
+                        break;
                     }
 
                 }
