@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "daycounterdisplay",
-	"version": "${version}",
+	"version": "1.0.1",
 	"name": "dayCounterDisplay",
 	"description": "This mod displays the number of days elapsed in a server in the top left of the players screen. Since Mojang took this feature out of the debug menu, I've decided to put it back in myself.",
 	"authors": [
